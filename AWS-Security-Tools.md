@@ -24,3 +24,5 @@
 
 * Use an aggregator to view the resource configuration and compliance data recorded in AWS Config. The following image displays how an aggregator collects AWS Config data from multiple accounts and regions.
 ![Screenshot 2023-01-30 at 10 27 53 AM](https://user-images.githubusercontent.com/55474202/215535168-454319a4-e4aa-4345-a1fe-64d64a9232ae.png)
+
+## Automatically Enforcing S3 Bucket Encryption.
