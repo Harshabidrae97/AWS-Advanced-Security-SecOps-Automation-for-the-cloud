@@ -13,3 +13,14 @@
     * we can use Amazon APIs and some SDKs to auto remediate some of the non complaints.
     * And we ca manage history and snapshots.
 
+## AWS Config Aggregation
+* An aggregator is an AWS Config resource type that collects AWS Config configuration and compliance data from the following:
+
+    * Multiple accounts and multiple regions.
+
+    * Single account and multiple regions.
+
+    * An organization in AWS Organizations and all the accounts in that organization which have AWS Config enabled.
+
+* Use an aggregator to view the resource configuration and compliance data recorded in AWS Config. The following image displays how an aggregator collects AWS Config data from multiple accounts and regions.
+![Screenshot 2023-01-30 at 10 27 53 AM](https://user-images.githubusercontent.com/55474202/215535168-454319a4-e4aa-4345-a1fe-64d64a9232ae.png)
