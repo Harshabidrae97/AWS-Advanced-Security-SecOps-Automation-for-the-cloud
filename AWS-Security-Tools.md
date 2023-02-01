@@ -43,7 +43,7 @@
 * what this rule will do is, it will check for the all the ec2 instances in the account which have public Ips and automattically STOP the instances.
 * Even if somebody goes and attaches or launches a new instances with a public IP. This rule will enforce and turn off the instances.
 
-## * Automatically enforce  AMI ID and Tags comiplamce for all EC2 instances.
+##  Automatically enforce  AMI ID and Tags comiplamce for all EC2 instances.
 
 
 
