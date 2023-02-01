@@ -36,10 +36,13 @@
 * if anybody is trying to circumvent your rules, config ensure that configuration change is captured and it will enforce the compilance rules on top of it.
 
 
+## Automatically enforce 'NO public IPs for EC2 instances' Ploicy
+* Lets imagine an organization which says all of its insatnces should be behind a NAT instances or none of its EC2 instances should have a public IP address.
 
+![Screenshot 2023-02-01 at 12 55 56 PM](https://user-images.githubusercontent.com/55474202/216137013-783adb5f-f64a-476f-8770-8c145c487ffe.png)
 
-
-
+* what this rule will do is, it will check for the all the ec2 instances in the account which have public Ips and automattically STOP the instances.
+* Even if somebody goes and attaches or launches a new instances with a public IP. This rule will enforce and turn off the instances.
 
 
 
