@@ -28,13 +28,12 @@
 ## Automatically Enforcing S3 Bucket Encryption.
  * S3 has 3 diff encryption : KMS, Server Side, Own keys.
  * If the bucket is created without encrytion, we are going deploy a script in the cloudformation which will take care of the encryption.
- * First we have config a rule, then there will be![Uploading Screenshot 2023-02-01 at 12.02.39 PM.png…]()
- periodical trigger. This trigger is going to evalate our S3 buckets.
+ * First we have config a rule, then there will be periodical trigger. This trigger is going to evalate our S3 buckets.
  * In this case, its going to check weather the objects in the bucket or bucket itself has been encrypted.
 ![Screenshot 2023-02-01 at 12 03 06 PM](https://user-images.githubusercontent.com/55474202/216125696-e6fc82d9-0d07-4489-8130-23ad82950a0e.png)
 * * Configured and ensured compliance for s3 buckets - automatically server side encryption using cloud formation and config.
 * if anybody is trying to circumvent your rules, config ensure that configuration change is captured and it will enforce the compilance rules on top of it.
-
+![Uploading Screenshot 2023-02-01 at 12.02.39 PM.png…]()
 
 ## Automatically enforce 'NO public IPs for EC2 instances' Ploicy
 * Lets imagine an organization which says all of its insatnces should be behind a NAT instances or none of its EC2 instances should have a public IP address.
