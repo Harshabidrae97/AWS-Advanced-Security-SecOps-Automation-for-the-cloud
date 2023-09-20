@@ -1,0 +1,10 @@
+* Creating a web ACL which will associate with cloudfront disreubution serving content from S3
+* will configure web acl and manual block of IP adress and then enable cloudfront login and write a lambda function that can analyze these logs.
+* Finally will enhance our lambda function to examine a bad HTTPS adress and automatically block those IP address in the web acl
+
+Architecure Explain
+* create a web ACL
+* Create a simple severless web application using CloudFront using s3 as its origin. 
+* will configure the web acl by associating with cloudfront distribution, creating a conditon and rule and manually blacklist IP address. 
+* Will enable cloudfront logging, create a lambda function to parse the cloudfront logs and add an event on cloud front log bucket to have the new logs trigger the lambda function.
+* will enhance the lambda function to detect bad HTTP resoponses and add those IP addrss to web acl blacklist condition
